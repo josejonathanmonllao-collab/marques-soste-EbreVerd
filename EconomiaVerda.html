@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Economia verda</title>
+
+  <style>
+    /* ===== Colors de la pàgina ===== */
+    :root {
+      --verd-fosc: #1f5130;
+      --verd: #2e7d4f;
+      --verd-clar: #e8f3ea;
+      --text: #23302a;
+      --blanc: #ffffff;
+    }
+
+    /* ===== Estils generals ===== */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f7faf7;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    h2 {
+      color: var(--verd-fosc);
+      border-bottom: 3px solid var(--verd);
+      padding-bottom: 6px;
+      margin-top: 40px;
+    }
+
+    /* ===== Capçalera ===== */
+    header {
+      background: linear-gradient(135deg, var(--verd-fosc), var(--verd));
+      color: var(--blanc);
+      text-align: center;
+      padding: 40px 16px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.6em;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+
+    /* ===== Imatge principal ===== */
+    .imatge-principal {
+      margin: 30px 0 0;
+    }
+
+    .imatge-principal img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
+    }
+
+    figcaption {
+      font-size: 0.9em;
+      color: #5b6b62;
+      text-align: center;
+      margin-top: 6px;
+    }
+
+    /* ===== Targetes amb imatge ===== */
+    .targetes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .targeta {
+      background-color: var(--blanc);
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .targeta img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .targeta h3 {
+      color: var(--verd);
+      margin: 15px 15px 5px;
+    }
+
+    .targeta p {
+      margin: 0 15px 15px;
+    }
+
+    /* ===== Llista de beneficis ===== */
+    .beneficis {
+      background-color: var(--verd-clar);
+      border-left: 5px solid var(--verd);
+      border-radius: 6px;
+      padding: 15px 20px 15px 40px;
+    }
+
+    .beneficis li {
+      margin-bottom: 8px;
+    }
+
+    /* ===== Menú de navegació ===== */
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+
+    nav a {
+      display: inline-block;
+      background-color: var(--verd);
+      color: var(--blanc);
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.2s;
+    }
+
+    nav a:hover {
+      background-color: var(--verd-fosc);
+    }
+
+    /* ===== Peu de pàgina ===== */
+    footer {
+      margin-top: 50px;
+      background-color: var(--verd-fosc);
+      color: var(--blanc);
+      text-align: center;
+      padding: 20px 16px;
+      font-size: 0.85em;
+    }
+
+    footer a {
+      color: #b9e4c6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== CAPÇALERA ===== -->
+  <header>
+    <h1>Economia verda</h1>
+    <p>Un model econòmic que cuida el planeta i les persones</p>
+  </header>
+
+  <main>
+
+    <!-- ===== IMATGE PRINCIPAL ===== -->
+    <figure class="imatge-principal">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Middelgrunden_wind_farm_2009-07-01_edit_filtered.jpg?width=1200"
+           alt="Parc eòlic marí de Middelgrunden, a prop de Copenhaguen">
+      <figcaption>Parc eòlic marí de Middelgrunden (Dinamarca)</figcaption>
+    </figure>
+
+    <!-- ===== INTRODUCCIÓ ===== -->
+    <section>
+      <h2>Què és l'economia verda?</h2>
+      <p>
+        L'<strong>economia verda</strong> és una manera d'organitzar l'economia que busca
+        millorar la qualitat de vida de les persones i crear riquesa, però sense
+        destruir el medi ambient. La idea és que el creixement econòmic i la protecció
+        de la natura no han de ser enemics, sinó que poden anar junts.
+      </p>
+      <p>
+        Es basa en tres idees principals: fer servir <strong>poca energia i que sigui neta</strong>,
+        <strong>aprofitar bé els recursos</strong> sense malbaratar-los i que els beneficis
+        arribin a <strong>tota la societat</strong>. En lloc de dependre del petroli, el carbó
+        i el gas, l'economia verda aposta per les energies renovables, el reciclatge i
+        els productes que duren més.
+      </p>
+    </section>
+
+    <!-- ===== PILARS DE L'ECONOMIA VERDA ===== -->
+    <section>
+      <h2>Els pilars de l'economia verda</h2>
+
+      <div class="targetes">
+
+        <article class="targeta">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/SolarFachwerkhaus.jpg?width=800"
+               alt="Casa amb plaques solars fotovoltaiques a la teulada">
+          <h3>Energia solar</h3>
+          <p>
+            Les plaques fotovoltaiques transformen la llum del sol en electricitat.
+            Es poden posar a les teulades de cases, escoles i empreses per produir
+            energia neta allà on es consumeix.
+          </p>
+        </article>
+
+        <article class="targeta">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Barrow_Offshore_wind_turbines_NR.jpg?width=800"
+               alt="Aerogeneradors d'un parc eòlic al mar">
+          <h3>Energia eòlica</h3>
+          <p>
+            Els aerogeneradors aprofiten la força del vent per generar electricitat
+            sense emetre gasos contaminants. Es poden instal·lar a terra o al mar,
+            on el vent bufa més fort i constant.
+          </p>
+        </article>
+
+        <article class="targeta">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Recycling_Bins,_Cheltenham,_UK.jpg?width=800"
+               alt="Contenidors de reciclatge separats per tipus de residu">
+          <h3>Economia circular</h3>
+          <p>
+            En lloc de "fabricar, utilitzar i llençar", l'economia circular proposa
+            reduir, reutilitzar i reciclar. Així els residus es converteixen en
+            nous recursos i s'extreuen menys matèries primeres.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== PER QUÈ ÉS IMPORTANT ===== -->
+    <section>
+      <h2>Per què és important?</h2>
+      <ul class="beneficis">
+        <li><strong>Lluita contra el canvi climàtic:</strong> redueix les emissions de CO₂.</li>
+        <li><strong>Crea feina:</strong> apareixen nous "llocs de treball verds" en energies renovables, reciclatge o rehabilitació d'edificis.</li>
+        <li><strong>Estalvia recursos:</strong> l'aigua, els minerals i els boscos no són infinits.</li>
+        <li><strong>Millora la salut:</strong> menys contaminació vol dir un aire més net a les ciutats.</li>
+        <li><strong>Pensa en el futur:</strong> deixa un planeta en bones condicions per a les properes generacions.</li>
+      </ul>
+    </section>
+
+    <!-- ===== NAVEGACIÓ CAP A LES ALTRES PÀGINES ===== -->
+    <section>
+      <h2>Les nostres pàgines</h2>
+      <nav>
+        <ul>
+          <li><a href="EconomiaVerda.html">Introducció</a></li>
+          <li><a href="indexJonathan.html">Pàgina de Jonathan</a></li>
+          <li><a href="HTML">Pàgina de Jakani</a></li>
+        </ul>
+      </nav>
+    </section>
+
+  </main>
+
+  <!-- ===== PEU DE PÀGINA ===== -->
+  <footer>
+    <p>Projecte sobre l'economia verda</p>
+    <p>
+      Imatges de Wikimedia Commons (llicència CC BY-SA):
+      <a href="https://commons.wikimedia.org/wiki/File:Middelgrunden_wind_farm_2009-07-01_edit_filtered.jpg">Middelgrunden</a> (Kim Hansen) ·
+      <a href="https://commons.wikimedia.org/wiki/File:SolarFachwerkhaus.jpg">Casa solar</a> (Túrelio) ·
+      <a href="https://commons.wikimedia.org/wiki/File:Barrow_Offshore_wind_turbines_NR.jpg">Parc eòlic</a> (Andy Dingley) ·
+      <a href="https://commons.wikimedia.org/wiki/File:Recycling_Bins,_Cheltenham,_UK.jpg">Contenidors</a>
+    </p>
+  </footer>
+
+</body>
+</html>
