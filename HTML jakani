@@ -34,7 +34,7 @@
     </nav>
   </header>
 
-  <div class="contenidor">
+  <main class="contenidor">
 
     <!-- Imatge + Contingut principal -->
     <div class="columna-principal">
@@ -127,9 +127,9 @@
     </div>
 
     <!-- Columna dreta: Informació complementària i fonts -->
-    <div class="columna-lateral">
+    <aside class="columna-lateral">
 
-      <aside aria-label="Informació complementària">
+      <div aria-label="Informació complementària">
         <article>
           <h2>Definició clau</h2>
           <p>Segons el Programa de les Nacions Unides per al Medi Ambient (PNUMA), l'economia verda és la que millora el benestar de les persones i la igualtat social alhora que redueix de manera important els riscos per al medi ambient.</p>
@@ -138,9 +138,9 @@
           <h2>Per què reduir el CO₂?</h2>
           <p>El CO₂ és el principal gas d'efecte d'hivernacle que generem quan cremem carbó, petroli i gas. Reduir-ne les emissions és l'objectiu número u de les tecnologies netes per frenar el canvi climàtic.</p>
         </article>
-      </aside>
+      </div>
 
-      <aside class="fonts" aria-label="Fonts i enllaços">
+      <div class="fonts" aria-label="Fonts i enllaços">
         <h2>Fonts i enllaços</h2>
         <ul>
           <li><a href="https://www.unep.org">PNUMA (UNEP)</a></li>
@@ -148,10 +148,10 @@
           <li><a href="https://icaen.gencat.cat">Institut Català d'Energia</a></li>
           <li>Apunts de classe (NotebookLM)</li>
         </ul>
-      </aside>
+      </div>
 
-    </div>
-  </div>
+    </aside>
+  </main>
 
   <footer>
     <p>Projecte Web ASIX1 · Grup 3: Economia Verda</p>
