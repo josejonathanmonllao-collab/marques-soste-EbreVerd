@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ---------- Capçalera i menús ---------- */
+header {
+  padding: 1rem 2rem;
+  background-color: #1e6b34;
+}
+
+.menu-principal {
+  margin-top: 0.8rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid #4caf50;
+}
+
+/* Els elements del menú es posen en fila */
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.subnav {
+  margin-top: 0.5rem;
+}
+
+.subnav ul {
+  gap: 1rem;
+}
+
+/* ---------- Distribució en dues columnes ---------- */
+.contenidor {
+  display: flex;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+/* Columna esquerra (imatge + main): ocupa 3 parts */
+.columna-principal {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 0;
+}
+
+/* Columna dreta (aside + fonts): ocupa 1 part */
+.columna-lateral {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ---------- Caixes (figure, seccions i aside) ---------- */
+figure,
+main section,
+aside {
+  padding: 1.2rem;
+  background-color: #ffffff;
+  border: 1px solid #c8e0c0;
+  border-radius: 8px;
+}
+
+figure {
+  margin: 0;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Les seccions del main una sota l'altra */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Article dins d'una secció (cas real) */
+main article {
+  padding: 1rem;
+  background-color: #f4f8f2;
+  border-left: 4px solid #8bc34a;
+  border-radius: 6px;
+}
+
+/* Tres articles en fila (pàgina de baix impacte) */
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.articles article {
+  flex: 1 1 200px;
+}
+
+aside article {
+  margin-bottom: 1rem;
+}
+
+/* ---------- Peu de pàgina ---------- */
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #1e6b34;
+}
+
+/* ---------- Responsive: mòbil i tauleta ---------- */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+
+  /* Les dues columnes passen a una sola */
+  .contenidor {
+    flex-direction: column;
+  }
+
+  nav ul {
+    gap: 0.8rem;
+  }
+}

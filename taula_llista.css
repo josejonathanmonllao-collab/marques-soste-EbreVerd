@@ -1,0 +1,80 @@
+/* =========================================================
+   taula_llista.css
+   Aspecte de les taules i de les llistes
+   ========================================================= */
+
+/* ---------- Llistes del contingut ---------- */
+main ul,
+main ol,
+aside ul {
+  margin: 0 0 1rem 0;
+  padding-left: 1.5rem;
+}
+
+main ul {
+  list-style-type: square;
+}
+
+main ol {
+  list-style-type: decimal;
+}
+
+main li,
+aside li {
+  margin-bottom: 0.4rem;
+}
+
+/* ---------- Llistes dels menús (sense pics) ---------- */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* ---------- Taules ---------- */
+
+/* Permet desplaçar la taula de costat en pantalles petites */
+.taula-scroll {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+caption {
+  padding: 0.5rem;
+  font-weight: bold;
+  color: #1e6b34;
+}
+
+th {
+  padding: 0.6rem;
+  text-align: left;
+  color: #ffffff;
+  background-color: #2e7d32;
+  border: 1px solid #2e7d32;
+}
+
+td {
+  padding: 0.6rem;
+  vertical-align: top;
+  border: 1px solid #c8e0c0;
+}
+
+/* Files alternes de color (efecte zebra) */
+tbody tr:nth-child(even) {
+  background-color: #eef6ea;
+}
+
+tbody tr:hover {
+  background-color: #dcedc8;
+}
+
+/* Primera columna en negreta */
+tbody td:first-child {
+  font-weight: bold;
+  color: #1e6b34;
+}
