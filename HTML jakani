@@ -150,12 +150,24 @@
         </ul>
       </div>
 
+<<<<<<< HEAD:HTML jakani
     </aside>
   </main>
 
+=======
+    </div>
+  </div>
+      <h2>Les nostres pàgines</h2>
+      <nav>
+        <ul>
+          <li><a href="EconomiaVerda.html">Introducció</a></li>
+          <li><a href="indexJonathan.html">Pàgina de Jonathan</a></li>
+        </ul>
+      </nav>
+>>>>>>> 797afa8c658478b1a9575e49da6960e4af28d6cb:HTML
   <footer>
     <p>Projecte Web ASIX1 · Grup 3: Economia Verda</p>
-    <p>Autor/a: Nom Cognom · MP0373 + MP1708 · Curs 2026-2027</p>
+    <p>Fet per: Mohammed Jakani · 0373 + 1708 · Curs 2026-2027</p>
   </footer>
 
 </body>
